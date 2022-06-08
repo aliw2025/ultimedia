@@ -1,0 +1,24 @@
+PODS:
+  - AMSMB2 (2.7.1)
+  - Gifu (3.3.1)
+  - TVVLCKit (3.4.0)
+
+DEPENDENCIES:
+  - AMSMB2
+  - Gifu
+  - TVVLCKit (~> 3.4.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AMSMB2
+    - Gifu
+    - TVVLCKit
+
+SPEC CHECKSUMS:
+  AMSMB2: 4017852863a688970e8c4f38a4fae9826fbbec34
+  Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
+  TVVLCKit: fe80e9f1eff6efdedeab9b0dcba360e0225c9bdc
+
+PODFILE CHECKSUM: a41a457b636189b4b52862dd4970438da3d9f782
+
+COCOAPODS: 1.11.2

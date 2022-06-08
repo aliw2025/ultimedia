@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H1824" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Credentials" representedClassName=".Credentials" parentEntity="Source" syncable="YES" codeGenerationType="class">
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="source" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Source" inverseName="credentials" inverseEntity="Source"/>
+    </entity>
+    <entity name="Source" representedClassName=".Source" syncable="YES" codeGenerationType="class">
+        <attribute name="endpoint" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="port" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="share" optional="YES" attributeType="String"/>
+        <attribute name="sourceType" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="credentials" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Credentials" inverseName="source" inverseEntity="Credentials"/>
+    </entity>
+    <elements>
+        <element name="Credentials" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Source" positionX="-520.25390625" positionY="-63.17578125" width="128" height="133"/>
+    </elements>
+</model>
